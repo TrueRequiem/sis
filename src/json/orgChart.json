@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Ahmad",
+        "designation": "Manager",
+        "children": [
+            {
+                "name": "Mohamed",
+                "designation": "Sub-Manager",
+                "children": [
+                    {
+                        "name": "Ahmad",
+                        "designation": "Employee",
+                        "children": null
+                    },
+                    {
+                        "name": "Ahmad",
+                        "designation": "Employee",
+                        "children": null
+                    }
+                ]
+            },
+            {
+                "name": "Mohamed",
+                "designation": "Sub-Manager",
+                "children": null
+            }
+        ]
+    }
+]

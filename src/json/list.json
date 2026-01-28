@@ -1,0 +1,84 @@
+[
+    {
+        "title": "Documents",
+        "type": "folder",
+        "children": [
+            {
+                "title": "SEKEM",
+                "type": "folder",
+                "children": [
+                    {
+                        "title": "Documents",
+                        "type": "doc",
+                        "children": null
+                    },
+                    {
+                        "title": "Certificates",
+                        "type": "cert",
+                        "children": null
+                    }
+                ]
+            },
+            {
+                "title": "ISIS",
+                "type": "folder",
+                "children": [
+                    {
+                        "title": "Documents",
+                        "type": "doc",
+                        "children": null
+                    },
+                    {
+                        "title": "Certificates",
+                        "type": "cert",
+                        "children": null
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Organization charts",
+        "type": "folder",
+        "children": [
+            {
+                "title": "SEKEM",
+                "type": "folder",
+                "children": [
+                    {
+                        "title": "SEKEM Holding",
+                        "type": "chart",
+                        "children": null
+                    },
+                    {
+                        "title": "SEKEM Laboratories",
+                        "type": "chart",
+                        "children": null
+                    }
+                ]
+            },
+            {
+                "title": "ISIS",
+                "type": "folder",
+                "children": [
+                    {
+                        "title": "ISIS Overview",
+                        "type": "chart",
+                        "src" : "ISIS OV",
+                        "children": null
+                    },
+                    {
+                        "title": "ISIS Factory",
+                        "type": "chart",
+                        "children": null
+                    },
+                    {
+                        "title": "ISIS Financial",
+                        "type": "chart",
+                        "children": null
+                    }       
+                ]
+            }
+        ]
+    }
+]
