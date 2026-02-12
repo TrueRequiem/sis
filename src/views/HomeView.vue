@@ -2,9 +2,9 @@
 
   <div class="gridCont">
     <NavComp></NavComp>
-      <br><br><br><br>
-    <OrgChart class="compDefaults" :class="{'showElement' : showChart, 'notLoaded' : !chartsIsLoaded}"></OrgChart>
-    <FileViewer class="compDefaults" :class="{'showElement' : showDocs, 'notLoaded' : !docsIsLoaded}"></FileViewer>
+    <div></div>
+    <OrgChart v-if="chartsIsLoaded" class="compDefaults" :class="{'showElement' : !showChart, 'notLoaded' : !chartsIsLoaded}"></OrgChart>
+    <FileViewer v-if="docsIsLoaded" class="compDefaults" :class="{'showElement' : showDocs, 'notLoaded' : !docsIsLoaded}"></FileViewer>
   </div>
 
   <div class="pageBackground"></div>
@@ -212,18 +212,23 @@ export default {
       border: 1px solid #999;
       scale: 0;
       opacity: 0;
+      margin-left: 10px;
+      margin-right: 10px;
       height: 88vh;
       box-sizing: border-box;
       transition: .3s ease-in-out;
       overflow-y: auto;
+      overflow-x: auto;
     }
     .compDefaults::-webkit-scrollbar{
-      width: 1em;
+      width: .75em;
+      height: .75em;
     }
     .compDefaults::-webkit-scrollbar-track{
       background: rgb(0, 0, 0,.1);
       border-radius: 10px;
-      margin-block: 20px;
+      /* margin-block: 20px; */
+      margin: 30px;
     }
     .compDefaults::-webkit-scrollbar-thumb{
       background: rgb(0, 0, 0,.1);
@@ -246,5 +251,21 @@ export default {
     .showElementBasic{
       scale: 1;
       opacity: 1;
+    }
+
+    @media screen and (max-height: 700px) {
+      .compDefaults{
+        height: 86vh;
+      }
+    }
+    @media screen and (max-height: 600px) {
+      .compDefaults{
+        height: 84vh;
+      }
+    }
+    @media screen and (max-height: 500px) {
+      .compDefaults{
+        height: 82vh;
+      }
     }
 </style>
