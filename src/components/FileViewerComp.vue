@@ -87,7 +87,6 @@ export default {
         padding-top: 50px;
         padding-bottom: 10px;
         transition: .3s;
-        margin: 10px;
     }
     /* .docViewer{
         z-index: 2;

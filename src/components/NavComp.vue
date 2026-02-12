@@ -28,7 +28,7 @@
 
 nav{
   z-index: 1;
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   background-color: rgb(173, 216, 230, .8);
   box-sizing: border-box;

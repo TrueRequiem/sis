@@ -82,8 +82,6 @@
         max-height: 500vh;
         max-width: 500vw;
         opacity: 1;
-        overflow: hidden;
-        transition: .5s ease-in-out;
     }
 
     ul.nested::before{
